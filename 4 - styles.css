@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* input {
+    border: 1px solid red;
+    color: blue;
+} */
+
+/*Pseudo elemento*/
+/*muda a cor do texto interno*/
+/* input::placeholder { 
+    color: pink;
+} */
+
+/* p{
+    color: rgb(78, 78, 158);
+    font-size: 25px;
+} */
+
+/*Muda a cor da primeira linha do texto*/
+/* p::first-letter {
+    color: blue;
+} */
+
+/*muda a cor da primeira letra*/
+/* p::first-line {
+    color: cyan;
+} */
+
+/* _______________________________________________ */
+
+a {
+    color: blue;
+}
+
+/* BEFORE - Antes do meu elemento */
+
+a::before {
+    content: "→";
+}
+
+/* AFTER - depois do meu elemento */
+a::after {
+    content: "→";
+}

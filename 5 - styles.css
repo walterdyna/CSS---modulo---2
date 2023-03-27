@@ -1,0 +1,90 @@
+/* Pseudo classes
+:active - quando o elemento esta ativo, ou seja, esta sendo pressionado;
+:visited - seleciona o link que foi visitado;
+:hover - quando o mouse passa em cima do elemento;
+:checked - usado em radio / checkbox / select;
+:disabled - elemento desabilitado / button / input;
+:enabled - elemento esta habilitado;
+:focus - é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuario seleciona o elemento;
+:read-only - seleciona input ou textarea que são apenas leitura;
+:emply - elemento que não tem filho.
+______________________________________________________________________________________________________________
+
+:first-chid - primeiro filho / ex: primeira li de uma Ul / primeiro span de uma div;
+:first-of-type - primeiro elemento de seu tipo entre os filhos de seu elemento pai;
+:last-child - ultimo filho;
+:last-of-type - ultimo elemento de seu tipo entre os filhos de seu elemento pai;
+:not() - estiliza os elementos, exceto o que esta dentro do ();
+:nth-child() - seleciona o elemento baseado na sua posição. Ex: :nht-child(3);
+:nht-last-child() - seleciona o elemento baseado na sua posição, contando de tras para frente. */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ex: muda a cor do link quando esta fazendo a ação (clicar) */
+a:active { 
+    color: red;
+}
+
+/* Muda a cor depois de abrir ou clicar no link */
+a:visited {
+    color: rgb(15, 163, 101);
+}
+
+/* ação quando o mouse passa no local */
+a:hover {
+    color: blue;
+}
+
+/* a ação so e aplicada quando se aplica */
+input:checked {
+    color: rgb(18, 142, 199);
+    width: 100px;
+    height: 100px;
+}
+
+/* aplica a função quando o items ou botao esta desabilitado */
+button:disabled {
+    color: rgb(230, 14, 147);
+    width: 100px;
+    height: 100px;
+}
+
+/* quando se dar foto (clicar nele) */
+input:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+/* somente leitura ( nao paga o que esta dentro) */
+input:read-only {
+    border: 1px solid rgb(29, 10, 197);
+    outline: none;
+}
+
+/* ex: com classe */
+.container {
+    height: 100px;
+    width: 100px;
+    background: rebeccapurple;
+}
+
+/* Se a div estiver vazia muda a cor para seleção */
+.container:empty {
+    background: blue;
+}
+
+.braba {
+    height: 100px;
+    width: 100px;
+    background: yellow;
+}
+
+/* Se a div estiver vazia muda a cor para seleção */
+.braba:empty {
+    background: blue;
+}

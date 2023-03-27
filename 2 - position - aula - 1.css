@@ -1,0 +1,53 @@
+/* - VAMOS FALAR DE POSITION
+
+ - postion: static (padrão) - Não aceita valores de TOP, Botton, Right, e Left.
+(ex: uma div fica por padrão maximo em cima maximo exquerda. isso e padrão dos elementos).
+ 
+- postion: fixed - Fixa o elemento na tela.
+(determina o local da tela onde ele vai ficar)
+
+ - postion: sticky - Age como um adesivo - fixa o elemento Só onde eu determinar.
+(ele fica suspenso na tela e pode andar sobre os elemnetos ate onde desejar)
+
+ - postion: relative - Posição relativa a posição inicial dele.
+ (relativo a sua orgim ou posição)
+
+ - postion: absolute - posição absoluta(FIXA) a algum elemento ou pagina.
+(ele flutua referente a tela - caso o elemento 1 seja PADRAO)
+
+Propriedades:
+	- TOP
+	- Botton
+	- Left
+	- Right
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}
+
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: #ff1396;
+}
+
+
+
+
+.div-son{
+    height: 150px;
+    width: 150px;
+    background-color: #ffff
+    00;
+}
+
+.tanananan {
+    background-color: #ff0000;
+    height: 100px;
+    width: 100px;
+}

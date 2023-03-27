@@ -1,0 +1,76 @@
+/* Pseudo classes
+:active - quando o elemento esta ativo, ou seja, esta sendo pressionado;
+:visited - seleciona o link que foi visitado;
+:hover - quando o mouse passa em cima do elemento;
+:checked - usado em radio / checkbox / select;
+:disabled - elemento desabilitado / button / input;
+:enabled - elemento esta habilitado;
+:focus - é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuario seleciona o elemento;
+:read-only - seleciona input ou textarea que são apenas leitura;
+:emply - elemento que não tem filho.
+______________________________________________________________________________________________________________
+
+:first-child - primeiro filho / ex: primeira li de uma Ul / primeiro span de uma div;
+:first-of-type - primeiro elemento de seu tipo entre os filhos de seu elemento pai;
+:last-child - ultimo filho;
+:last-of-type - ultimo elemento de seu tipo entre os filhos de seu elemento pai;
+:not() - estiliza os elementos, exceto o que esta dentro do ();
+:nth-child() - seleciona o elemento baseado na sua posição. Ex: :nht-child(3);
+:nth-last-child() - seleciona o elemento baseado na sua posição, contando de tras para frente. */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div {
+    font-size: 25px;
+    border: 2px solid;
+}
+
+li {
+    font-size: 25px;
+    border: 2px solid;
+
+}
+/* _______________________________________________________ */
+
+/* Vale lembrar que qualquer informação so aprica ao local escolido  */
+
+li:first-child { /* vai estizar o primeiro elemento do primeiro da lista*/
+    color: red;
+}
+
+span:first-of-type { /* estilliza o primeiro elemento por tipo utilizado. */
+    color: red;
+}
+
+p:first-of-type { /* estilliza o primeiro elemento por tipo utilizado. */
+    color: blue;
+}
+
+li:last-child { /* Estiliza o o ultimo elemento por tipo utilizado */
+    color: violet;
+}
+
+span:last-of-type {/* Estiliza o o ultimo elemento por tipo utilizado */
+    color: cadetblue;
+}
+p:last-of-type { /* Estiliza o o ultimo elemento por tipo utilizado */
+    color: aqua;
+} 
+
+.container:not(.excluido){ /* vai estilizar todo a div ou paragurafo mesnos a informação dentro do () */
+    color: chartreuse;
+}
+
+li:nth-child(3){/* Estiliza o primeiro considerando numero que tinha no ()... ele conta de cima para cima */
+    color: darkorchid;
+}
+
+
+li:nth-last-child(3){ /* Estiliza o ultimo considerando o numero que esta no ()... ele conta de baixo para cima */
+    color: mediumblue;
+}
